@@ -61,6 +61,28 @@ select {
     font-weight: bold;
 }
 
+.square-81 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 9);
+    aspect-ratio: 1/1;
+    border: 2px solid #b9b9b9;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.square-49 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 7);
+    aspect-ratio: 1/1;
+    border: 2px solid #b9b9b9;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .square.clicked {
     background-color: brown;
 }
