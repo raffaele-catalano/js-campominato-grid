@@ -16,21 +16,31 @@
 
 
 const container = document.querySelector('.container');
+const select = document.querySelector('select');
 
-document.querySelector('select').addEventListener('change', function() {
-    // document.querySelector('button').remove();
+
+document.querySelector('button').addEventListener('click', function() {
 
     // alla sezione della difficoltà viene rimossa la classe .hide al container
     container.classList.remove('hide')
 
-    for (let i = 1; i <= this.value; i++) {
+    for (let i = 1; i <= select.value; i++) {
         //ad ogni ciclo creo uno square
         const square = squaresGenerator(i);
-            // console.log(square);
+
+        //TODO: sostituire con uno switch-case
+        
+        if (select.value == 81) {
+            square.classList.add('square81')
+        } else if (select.value == 49) {
+            square.classList.add('square49')
+        } else 
+            square.classList.add('square100')
             
         square.addEventListener('click', function(){
             // al click su uno square cambia colore prendendo la classe "clicked"
             this.classList.toggle('clicked');
+            console.log('valore dello square -->', square.innerText);
         })
 
         container.appendChild(square)
@@ -40,8 +50,8 @@ document.querySelector('select').addEventListener('change', function() {
 //   **********     FUNCTIONS     **********
 /**
  * this function genereates new "squares"
- * @param {number}
- * @returns new square generated
+ * @param {number} number 
+ * @returns new square generator
  */
 function squaresGenerator(number) {
     //creazione di un elemento "div"
