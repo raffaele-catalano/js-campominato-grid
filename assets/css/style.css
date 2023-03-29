@@ -43,6 +43,7 @@ button {
     border-radius: 10px;
     font-size: 1.6rem;
     box-shadow: 1px 1px 30px rgba(255, 255, 255, .5);
+    cursor: pointer;
 }
 
 select {
@@ -56,6 +57,7 @@ select {
     border-radius: 10px;
     text-align: center;
     box-shadow: 1px 1px 30px rgba(255, 255, 255, .5);
+    cursor: pointer;
 }
 
 
