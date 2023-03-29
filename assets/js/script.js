@@ -18,9 +18,9 @@
 const container = document.querySelector('.container');
 const select = document.querySelector('select');
 
-//FIXME: evitare la creazione di una griglia sotto a quella già selezionata
+//FIXME: problema del reset
 
-document.querySelector('button').addEventListener('click', function() {
+document.getElementById('start').addEventListener('click', function() {
 
     // alla sezione della difficoltà viene rimossa la classe .hide al container
     container.classList.remove('hide')
@@ -45,6 +45,10 @@ document.querySelector('button').addEventListener('click', function() {
         })
 
         container.appendChild(square)
+
+        document.getElementById('reset').addEventListener('click', function() {
+            container.remove()
+        })
     }
 });
 
