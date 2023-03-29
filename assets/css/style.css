@@ -54,33 +54,23 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
+    aspect-ratio: 1/1;
+    border: 2px solid #b9b9b9;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0;
+}
+
+.square100 {
     width: calc(100% / 10);
-    aspect-ratio: 1/1;
-    border: 2px solid #b9b9b9;
-    cursor: pointer;
-    font-weight: bold;
 }
 
-.square-81 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.square81 {
     width: calc(100% / 9);
-    aspect-ratio: 1/1;
-    border: 2px solid #b9b9b9;
-    cursor: pointer;
-    font-weight: bold;
 }
 
-.square-49 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.square49 {
     width: calc(100% / 7);
-    aspect-ratio: 1/1;
-    border: 2px solid #b9b9b9;
-    cursor: pointer;
-    font-weight: bold;
 }
 
 .square.clicked {
