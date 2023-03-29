@@ -28,7 +28,7 @@ document.querySelector('button').addEventListener('click', function() {
         //ad ogni ciclo creo uno square
         const square = squaresGenerator(i);
 
-        //TODO: sostituire con uno switch-case
+        //TODO: sostituire con uno switch-case se possibile
         
         if (select.value == 81) {
             square.classList.add('square81')
