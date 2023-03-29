@@ -18,6 +18,7 @@
 const container = document.querySelector('.container');
 const select = document.querySelector('select');
 
+//FIXME: evitare la creazione di una griglia sotto a quella già selezionata
 
 document.querySelector('button').addEventListener('click', function() {
 
