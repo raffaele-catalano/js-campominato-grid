@@ -5,7 +5,10 @@ Ogni cella ha un numero progressivo, da 1 a 100.
 Ci saranno quindi 10 caselle per ognuna delle 10 righe.
 Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
 ## Development
--
+- Stabilire una *const* per il *container*;
+- Impostare un `for cycle` al cui interno inserire un *`click event`* il quale cambia colore ad ogni *square*;
+- Impostare una `function` che generi come *return* un nuovo *square* ed *invocarla* nel ciclo;
+- *`Append`are* gli *squares* generati nel container;
 
 ### Bonus
 Aggiungere una select accanto al bottone di generazione, che fornisca una scelta tra tre diversi livelli di difficoltà:
